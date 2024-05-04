@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Cat Song';
+    src: url('Cat Song.ttf') format('truetype');
+}
+
+body 
+{
+    background-image: url(background.png);
+    background-size: cover;
+    margin: 0;
+    text-align: center;
+    font-family: 'Cat Song', 'Courier New', Courier, monospace;
+}
+
+.logoheader {
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    background-color: #1D1609;
+    padding: 15px; 
+    display: inline-block; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555; 
+    border-radius: 10px;
+}
+
+h1
+{
+    margin-top: 30px;
+}
+
+h2
+{
+    margin-top: 30px;
+}
+.welcometext
+{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 13pt;
+}
+
+.gallerytext
+{
+    font-size: 13pt;
+}
+
+.image-container
+{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.14);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.faq
+{
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #d0b89c;
+    font-size: 13pt;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #d0b89c;
+}
+
+.product img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+}
+
+.product:hover {
+    background-color: #a1886d;
+}
+
+.orderform
+{
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #d0b89c;  
+    transition: background-color 0.3s ease; 
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.about-section {
+    background-color: #d0b89c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-section img
+{
+    height: 200px;
+    width: 200px;
+}
+.about-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-info 
+{
+    background-color: #d0b89c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
